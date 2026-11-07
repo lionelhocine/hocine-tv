@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HoC!Ne TV</string>
+    <string name="category_all">All Channels</string>
+    <string name="category_favorites">Favorites</string>
+    <string name="search_hint">Search channels...</string>
+    <string name="action_search">Search</string>
+    <string name="action_close_search">Close</string>
+    <string name="refresh_playlist">Refresh</string>
+    <string name="resume_on">Auto-resume: ON</string>
+    <string name="resume_off">Auto-resume: OFF</string>
+    <string name="loading_playlist">Loading channels...</string>
+    <string name="stream_error">Stream unavailable. Retrying (%1$d/3)...</string>
+    <string name="stream_skipping">Stream unavailable. Skipping to next channel...</string>
+    <string name="no_favorites">No favorite channels yet. Press and hold OK on any channel to add it here.</string>
+    <string name="no_channels">No channels found.</string>
+    <string name="load_error">Could not load channels. Check your internet and press Refresh.</string>
+    <string name="offline_mode">Offline mode (saved list)</string>
+</resources>

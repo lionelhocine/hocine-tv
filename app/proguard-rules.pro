@@ -1,0 +1,9 @@
+-keepattributes *Annotation*, InnerClasses
+-dontnote kotlinx.serialization.AnnotationsKt
+-keepclassmembers class kotlinx.serialization.json.** { *** Companion; }
+-keepclasseswithmembers class kotlinx.serialization.json.** { kotlinx.serialization.KSerializer serializer(...); }
+-keep,includedescriptorclasses class com.tv.streamapp.**$$serializer { *; }
+-keepclassmembers class com.tv.streamapp.** { *** Companion; }
+-keepclasseswithmembers class com.tv.streamapp.** { kotlinx.serialization.KSerializer serializer(...); }
+-dontwarn org.slf4j.**
+-dontwarn javax.annotation.**
