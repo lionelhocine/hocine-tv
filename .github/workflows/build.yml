@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -20,19 +20,4 @@ jobs:
 
       - name: Accept Android licenses
         run: |
-          SDKM=$(find "$ANDROID_HOME/cmdline-tools" -name sdkmanager | head -n 1)
-          yes | "$SDKM" --licenses > /dev/null || true
-
-      - name: Gradle
-        uses: gradle/actions/setup-gradle@v4
-        with:
-          gradle-version: '8.9'
-
-      - name: Build debug APK
-        run: gradle assembleDebug --no-daemon --stacktrace
-
-      - name: Upload APK
-        uses: actions/upload-artifact@v4
-        with:
-          name: HoCiNe-TV-apk
-          path: app/build/outputs/apk/debug/*.apk
+          SDKM=$(find "$ANDROID_HOME/cmd
